@@ -1,1 +1,7 @@
-Test
+  92  cd DevOps-Tutorial/
+   94  git switch -c 1.1_linux_tutorial
+   95  vi LinuxBasicCommands.txt
+   96  git add . && git commit -am "Commit Text" && git push
+   97  git push --set-upstream origin 1.1_linux_tutorial
+   98  history
+
