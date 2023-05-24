@@ -7,6 +7,13 @@ How to Install Nagios Monitoring Tool
 1.	Updating the packages
 - 2.	Installing the latest version of Nagios XI 
 
+### Resetting The Password
+Open an SSH or direct console session to your Nagios XI host and execute the following command:
+
+/usr/local/nagiosxi/scripts/reset_nagiosadmin_password.php --password=newpassword
+### Note: If you would like to use special characters in your password, you should escape them with "\". For example, if you want to set your new password to be "$new password#", then you can run:
+
+/usr/local/nagiosxi/scripts/reset_nagiosadmin_password.php --password=\$new\ password\#
 
 
 **Note**: You need a blank ubuntu lab before you proceed with installations. Any pre-installed tool/package might interfere with the installation process giving errors. So kindly, terminate the lab access and launch a fresh lab instance before you proceed with this demo.
